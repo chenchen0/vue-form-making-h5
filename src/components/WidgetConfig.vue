@@ -346,7 +346,7 @@ export default {
     },
     handleAddColumn () {
       this.data.columns.push({
-        span: '',
+        span: 12,
         list: []
       })
     },

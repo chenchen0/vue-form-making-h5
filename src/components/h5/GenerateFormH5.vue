@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <el-form ref="generateForm" :model="models" :rules="rules" :label-position="data.config.labelPosition" :label-width="data.config.labelWidth + 'px'">
+    <!-- <el-form ref="generateForm" :model="models" :rules="rules" :label-position="data.config.labelPosition" :label-width="data.config.labelWidth | labelWidth">
       <template v-for="item in data.list">
     
         <template v-if="item.type == 'grid'">
@@ -37,7 +37,7 @@
       </template>
     </el-form> -->
 
-    <el-form ref="generateForm" :model="models" :rules="rules" :label-position="data.config.labelPosition" :label-width="data.config.labelWidth + 'px'">
+    <el-form ref="generateForm" :model="models" :rules="rules" :label-position="data.config.labelPosition" :label-width="data.config.labelWidth | labelWidth">
       <template v-for="item in data.list">
         
         <!-- grid为栅格布局，移动端不用做栅格布局，直接遍历columns中的list即可.blank为自定义区域也不需要 -->

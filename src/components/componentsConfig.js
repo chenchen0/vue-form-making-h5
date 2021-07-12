@@ -25,26 +25,11 @@ export const basicComponents = [
     }
   },
   {
-    type: 'number',
-    name: '计数器',
-    icon: 'sort-numeric-up',
-    options: {
-      width: '',
-      required: false,
-      defaultValue: 0,
-      min: '',
-      max: '',
-      step: 1,
-      disabled: false,
-      controlsPosition: ''
-    }
-  },
-  {
     type: 'radio',
     name: '单选框组',
     icon: 'regular/dot-circle',
     options: {
-      inline: false,
+      inline: true,
       defaultValue: '',
       showLabel: false,
       options: [
@@ -77,7 +62,7 @@ export const basicComponents = [
     name: '多选框组',
     icon: 'regular/check-square',
     options: {
-      inline: false,
+      inline: true,
       defaultValue: [],
       showLabel: false,
       options: [
@@ -119,7 +104,7 @@ export const basicComponents = [
       arrowControl: true,
       format: 'HH:mm:ss',
       required: false,
-      width: '',
+      width: '100%',
     }
   },
   {
@@ -139,7 +124,7 @@ export const basicComponents = [
       format: 'yyyy-MM-dd',
       timestamp: false,
       required: false,
-      width: '',
+      width: '100%',
     }
   },
   {
@@ -177,7 +162,7 @@ export const basicComponents = [
       placeholder: '',
       required: false,
       showLabel: false,
-      width: '',
+      width: '100%',
       options: [
         {
           value: '下拉框1'
@@ -222,6 +207,21 @@ export const basicComponents = [
       range: false,
       width: ''
     }
+  },
+  {
+    type: 'number',
+    name: '计数器',
+    icon: 'sort-numeric-up',
+    options: {
+      width: '',
+      required: false,
+      defaultValue: 0,
+      min: '',
+      max: '',
+      step: 1,
+      disabled: false,
+      controlsPosition: ''
+    }
   }
 ]
 
@@ -261,6 +261,10 @@ export const layoutComponents = [
     name: '栅格布局',
     icon: 'th',
     columns: [
+      {
+        span: 12,
+        list: []
+      },
       {
         span: 12,
         list: []

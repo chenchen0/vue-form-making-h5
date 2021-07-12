@@ -3,7 +3,7 @@
       v-if="element && element.key" 
       :class="{active: selectWidget.key == element.key, 'is_req': element.options.required}"
       :label="element.name"
-      @click.native="handleSelectWidget(index)"
+      @click.native.stop="handleSelectWidget(index)"
     >
         <template v-if="element.type == 'input'">
           <el-input 

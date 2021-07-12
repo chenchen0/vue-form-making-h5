@@ -198,7 +198,7 @@ export default {
       widgetForm: {
         list: [],
         config: {
-          labelWidth: 100,
+          labelWidth: 0,
           labelPosition: 'top'
         },
       },
